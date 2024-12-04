@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+	--color-header: #adadad9c;
+	--color-text: #848484de;
+	--column-gap: calc(var(--index) * 7);
+}
+
+h1 {
+	font-family: Inter;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Inter;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+body {
+	background-color: #ffffff0e;
+	background-image: url(/img/background.jpg);
+	background-size: 2800px;
+	color: #fafafa;
+	font-family: Inter;
+	overflow-x: hidden;
+}
+
+.hero {
+	z-index: -1;
+	width: calc(var(--index) * 23);
+	position: absolute;
+	left: 54vw;
+	top: 10vh;
+}
+
+.main-header {
+	height: 100vh;
+}
+
+.container {
+	padding: 0 7vw;
+}
+
+.main-title {
+	font-size: calc(var(--index) * 6);
+	position: absolute;
+	width: min-content;
+	top: 31vh;
+	line-height: 0.9;
+
+	text-shadow: 45px 25px 20px #47474750;
+}
+
+/* min-content - делает ширину по максимально длинному слову */
+
+.release-item {
+	display: flex;
+	padding: calc(var(--index) * 8) 0;
+}
+
+.release-item > * {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.release-block-left {
+	margin-top: calc(var(--column-gap) * 1.5);
+}
+
+.release {
+	position: absolute;
+	left: 6vw;
+	width: calc(var(--index) * 19);
+	box-shadow: 25px 25px 20px #0000005d;
+	border-radius: 16px;
+}
+
+.pam {
+	position: absolute;
+	right: 6vw;
+	width: calc(var(--index) * 19);
+	margin-top: calc(var(--column-gap) * 2);
+	border-radius: 16px;
+	box-shadow: 25px 25px 20px #0000005d;
+}
+
+.release-block-right {
+	/* border: 1px solid #fff; */
+	margin-top: calc(var(--column-gap) * 1.5);
+}
+
+.release-title {
+	margin-bottom: 17px;
+	font-size: calc(var(--index) * 1.2);
+}
+
+.release-description {
+	font-weight: 200;
+	font-size: calc(var(--index) * 0.8);
+}
+
+.concept-box {
+	margin-top: 10vh;
+	/* border: 1px solid #ffefefef; */
+	/* position: relative; */
+	border-radius: 16px;
+	padding: 20px 20px;
+	background-color: #64646416;
+	box-shadow: 20px 20px 15px #0000003a;
+}
